@@ -80,9 +80,9 @@ body {
   margin-top: 100px;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding-top: 30px;
+  padding:10px;
 }
 
 .dropdown-content li {
@@ -185,3 +185,53 @@ h4 {
   background-color: rgb(207, 203, 203);
   border-radius: 20px;
 }
+
+/* Add this to your CSS file */
+.search-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Your existing CSS styles */
+
+
+.ask-superhost-link {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 30px 10px;
+  background-color: #3b2102; /* Change the background color as needed */
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.ask-superhost-link:hover {
+  background-color: #881d0f; /* Change the background color on hover as needed */
+}
+/* Style for the link */
+.shop-now-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(71, 2, 2) ;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Hover effect for the link */
+.shop-now-link:hover {
+  background-color:#3498db;
+}
+.inspiration-trip-location .city .location-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.inspiration-trip-location .city .location-image:hover {
+  transform: scale(1.1);
+}
+/* Style for the link */
+
+

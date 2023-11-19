@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./hostform.css">
+  <title>Property Listing Form</title>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Property Listing Form</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="property-address">Property Address:</label>
+      <textarea id="property-address" name="property-address" rows="4" required></textarea>
+
+      <label for="amenities">Amenities:</label>
+      <input type="text" id="amenities" name="amenities">
+
+      <label for="bedrooms">Number of Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" min="1" required>
+
+      <label for="bathrooms">Number of Bathrooms:</label>
+      <input type="number" id="bathrooms" name="bathrooms" min="1" required>
+
+      <label for="pool">Pool:</label>
+      <select id="pool" name="pool">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="pet-allowed">Pet Allowed:</label>
+      <select id="pet-allowed" name="pet-allowed">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="air-conditioning">Air Conditioning:</label>
+      <select id="air-conditioning" name="air-conditioning">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="rate-per-night">Rate per Night:</label>
+      <input type="number" id="rate-per-night" name="rate-per-night" min="0" required>
+      <label for="photos">Upload Photos:</label>
+      <input type="file" id="photos" name="photos" accept="image/*" multiple>
+
+      <button type="submit">Submit</button>
+      
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./guestadd.css">
+    <title>Guest Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guest Information</h1>
+
+        <div class="guest-section">
+            <h2>Adults (Ages 13 or above)</h2>
+            <div class="counter">
+                <button id="adults-increase" onclick="increment('adults')">+</button>
+                <span id="adults-count">0</span>
+                <button id="adults-decrease" onclick="decrement('adults')">-</button>
+            </div>
+        </div>
+
+        <div class="guest-section">
+            <h2>Children (Ages 2–12)</h2>
+            <div class="counter">
+                <button id="children-increase" onclick="increment('children')">+</button>
+                <span id="children-count">0</span>
+                <button id="children-decrease" onclick="decrement('children')">-</button>
+            </div>
+        </div>
+
+        <div class="guest-section">
+            <h2>Infants (Under 2)</h2>
+            <div class="counter">
+                <button id="infants-increase" onclick="increment('infants')">+</button>
+                <span id="infants-count">0</span>
+                <button id="infants-decrease" onclick="decrement('infants')">-</button>
+            </div>
+        </div>
+
+        <div class="guest-section">
+            <h2>Pets (Bringing a service animal?)</h2>
+            <div class="counter">
+                <button id="pets-increase" onclick="increment('pets')">+</button>
+                <span id="pets-count">0</span>
+                <button id="pets-decrease" onclick="decrement('pets')">-</button>
+            </div>
+        </div>
+
+        <a href="../index.html" id="submit-link" class="button-style">Submit</a>
+    </div>
+
+    <script>
+        function increment(type) {
+            var countElement = document.getElementById(type + '-count');
+            var count = parseInt(countElement.innerText);
+            countElement.innerText = count + 1;
+        }
+
+        function decrement(type) {
+            var countElement = document.getElementById(type + '-count');
+            var count = parseInt(countElement.innerText);
+            if (count > 0) {
+                countElement.innerText = count - 1;
+            }
+        }
+    </script>
+</body>
+</html>

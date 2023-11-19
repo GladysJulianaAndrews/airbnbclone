@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .houses-grid {
+    margin: 20px;
+  }
+  
+  .house-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed for spacing between houses */
+  }
+  
+  .house-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .house-details {
+    margin-top: 10px;
+  }
+  
+  .price {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .amenities,
+  .location-address {
+    color: #555;
+  }
+  

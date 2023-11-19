@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.calendar {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    user-select: none; /* Disable text selection */
+}
+
+.day:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Style for selected day */
+.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style for the current day */
+.current-day {
+    font-weight: bold;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+}
+
+/* Style for the previous and next month's days */
+.other-month {
+    color: #ccc;
+}
+
+/* Style for the day container */
+.day-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Navigation buttons style */
+.prev-month, .next-month {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.prev-month:hover, .next-month:hover {
+    background-color: #2980b9;
+}
+
+/* Custom scrollbar style */
+.days::-webkit-scrollbar {
+    width: 6px;
+}
+
+.days::-webkit-scrollbar-thumb {
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+.days::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}

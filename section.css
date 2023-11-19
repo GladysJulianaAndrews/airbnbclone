@@ -189,13 +189,13 @@ section {
 
 .discover-image-1 {
   width: 620px;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .discover-image-2 {
-  width: 620px;
-  height: 415px;
-  border-radius: 10px;
+  width: 608px;
+  height: 412px;
+  border-radius: 2px;
 }
 
 .experiences {
@@ -271,7 +271,7 @@ section {
 .ask-superhost {
   border: none;
   width: 170px;
-  height: 50px;
+  height: 40px;
   background-color: white;
   border-radius: 10px;
   color: black;
@@ -279,4 +279,65 @@ section {
   font-weight: 450;
   margin-top: 300px;
   cursor: pointer;
+}
+.experience-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(94, 3, 3) ;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the link */
+.experience-link:hover {
+  background-color: #b94b29;
+}
+
+/* Style for the link */
+.online-experience-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(95, 17, 3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the link */
+.online-experience-link:hover {
+  background-color: #b94d29;
+}
+
+.locations-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.location-nav-link {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust as needed for spacing between columns */
+}
+
+.location-nav-link-item {
+  margin-bottom: 10px; /* Adjust as needed for spacing between rows */
+}
+
+.location-nav-link-item a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set the color to your preferred text color */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.location-nav-link-item a:hover {
+  text-decoration: underline; /* Add underline on hover if desired */
+}
+
+.location-city {
+  color: #555; /* Set the color for the city text */
 }

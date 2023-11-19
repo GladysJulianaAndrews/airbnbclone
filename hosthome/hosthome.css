@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .airbnb-setup {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .earnings {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  
+  .airbnb-promo {
+    margin-top: 20px;
+  }
+  
+  .protection-info {
+    margin-top: 20px;
+  }
+  
+  .protection-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .protection-info li {
+    margin-bottom: 10px;
+  }
+  
+  .questions {
+    margin-top: 20px;
+  }
+  
+  .questions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .questions li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    border: 1px solid #ddd; /* Add a border for illustration */
+    border-radius: 5px; /* Add border-radius for a rounded look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+
+  .host-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b5c05;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .host-link:hover {
+    background-color: #78b929;
+  }

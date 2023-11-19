@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/tourisim.jpg') center/cover fixed no-repeat;
+    background-color: rgba(244, 244, 244, 0.7); /* Adjust the RGB values and opacity as needed */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 2Sfr));
+    gap: 25px;    
+    max-width: 700px;
+    margin: 45px auto;
+    
+  }
+  
+  .grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+   
+  }
+  
+  .grid-container a {
+    box-sizing:border-box;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+  }
+  
+  /* Hover effect */
+  .grid-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
